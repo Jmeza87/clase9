@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+---
+
+<Layout>
+
+    <h1 class="text-center" >GALERIA</h1>
+
+    <div id="imagenes" class="container mx-auto d-flex flex-wrap gap-2 ">
+
+
+
+    </div>
+
+
+</Layout>
+
+<script>
+
+
+        const imagenesEl=document.querySelector("#imagenes")
+
+            let valor=""
+        for (let i=1;i<=10;i++){
+
+            valor+=`
+            <div class="card"  style=" width:400px;">
+             <img src="${i}.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <h5 class="card-title">Card title</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn btn-primary" id="5">Ver detalle</a>
+                    </div>
+            </div></div>
+            `
+
+        }
+//console.log(valor)
+
+imagenesEl.innerHTML=valor
+       
+        imagenesEl.addEventListener("click",(e)=>{
+
+            alert("Hola")
+        })
+
+
+</script>
