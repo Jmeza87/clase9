@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout.astro"
 
     <h1 class="text-center" >GALERIA</h1>
 
-    <div id="imagenes" class="container mx-auto d-flex flex-wrap gap-2 ">
+    <div id="imagenes" class="container mx-auto d-flex justify-content-center flex-wrap gap-2 ">
 
 
 
@@ -15,6 +15,22 @@ import Layout from "../layouts/Layout.astro"
 
 
 </Layout>
+
+<style>
+
+.card{
+    
+    transition: 0.9s;
+}
+
+    .card:hover{
+
+        box-shadow: 0 8px 16px 15px rgba(0,0,0,0.2);
+        transform: scale(1.05);  
+        cursor: pointer;
+    }
+
+</style>
 
 <script>
 
